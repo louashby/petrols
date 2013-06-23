@@ -6,7 +6,7 @@ div.liveTile div#imageTile{
 	margin-right: 5px;
 	width: 162px;
 	height: 162px;
-	background-image: url("../img/blog_shapeImage.png");
+	background-image: url("../img/live_shapeImage.png");
 	background-position: top left;
 	float: left;
 }
@@ -26,12 +26,12 @@ div.liveTile div#descriptionTile div#descriptionTitle h3 {
 div.liveTile div#descriptionTile div#shortDescription {
 	font-size: 14px;
 	font-weight: normal;
-	margin: 10px 0;
+	margin: 9px 0;
 }
 
 div.liveTile img {
-	width: 150px;
-	height: 150px;
+	width: 148px;
+	height: 148px;
 	margin: 0;
 	position: relative;
 	top: 7px;
