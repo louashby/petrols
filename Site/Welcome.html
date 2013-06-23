@@ -86,14 +86,27 @@
             
         }
         
+        function reverseFadeEffectAndRestart(){
+            var fadeSpeed = 2000;
+            jQuery('#titleImageContainer img#img4').fadeIn(fadeSpeed, function(){
+                                                            
+                jQuery('#titleImageContainer img#img3').fadeIn(fadeSpeed, function(){
+                                                                
+                    jQuery('#titleImageContainer img#img2').fadeIn(fadeSpeed, function(){
+                        
+                        jQuery('#titleImageContainer img#img1').fadeIn(fadeSpeed, function(){
+                            beginToFadeImages();
+                        });
+                    });
+                });
+            });
+        }
+        
         jQuery(document).ready(function(){
               beginToFadeImages();
               jQuery('#titleImageContainer img#img5').click(function(){
-              jQuery('#titleImageContainer img#img4').show();
-              jQuery('#titleImageContainer img#img3').show();
-              jQuery('#titleImageContainer img#img2').show();
-              jQuery('#titleImageContainer img#img1').show();
-              beginToFadeImages();
+              reverseFadeEffectAndRestart();
+              
             });
                                
                                
