@@ -35,7 +35,7 @@
 
 			var appendDialog = function(id, name, parent){
 				jQuery(parent).append('<div id="' + id + 'Detail" title="' + name + '" style="width: 500px"></div>');
-				jQuery(parent).find('div#' + id + 'Detail').append('<div class="imgContainer"><img src="../resources/img/' + id + '_big.jpg" /></div>');
+				jQuery(parent).find('div#' + id + 'Detail').append('<div class="imageContainer"><img src="../resources/img/' + id + '_big.jpg" /></div>');
 
 				jQuery(parent).find('div#' + id + 'Detail').dialog({
 					autoOpen: false,
@@ -43,7 +43,7 @@
 					resizable: false,
 					movable: false,
 					height: 730,
-					width: 480,
+					width: 466,
 					show: {
 						effect: "fade",
 						duration: 500

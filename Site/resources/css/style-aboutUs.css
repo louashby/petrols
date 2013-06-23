@@ -51,11 +51,27 @@ div.ui-dialog {
 }
 
 div.ui-dialog-titlebar{
-	background-color: white;
+	background-color: #F5F4F4;
 	border: none;
 	padding: 0;
 }
 
 div.ui-dialog-content{
+	background-color: #F5F4F4 !important;
 	padding: 0 !important;
+}
+
+div.imageContainer{
+	margin: 5px;
+	background: url('../img/shapeImage_Medium.png') no-repeat #F5F4F4;
+	width: 456px;
+	height: 674px;
+}
+
+div.imageContainer img{
+	width: 432px;
+	height: 650px;
+	position: relative;
+	top: 12px;
+	left: 12px;
 }
