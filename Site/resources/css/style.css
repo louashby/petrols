@@ -1,9 +1,9 @@
 @font-face {
-	font-family: 'Petrols';
-	src:	url('../fonts/ARBONNIE.eot');
-	src:	url('../fonts/ARBONNIE.eot?#iefix') format('embedded-opentype'),
-			url('../fonts/ARBONNIE.woff') format('woff'),
-			url('../fonts/ARBONNIE.ttf') format('truetype');
+   font-family: 'Petrols';
+   src: url('../fonts/ARBONNIE.eot');
+   src: url('../fonts/ARBONNIE.eot?#iefix') format('embedded-opentype'),
+   		url('../fonts/ARBONNIE.woff') format('woff'), 
+   		url('../fonts/ARBONNIE.ttf') format('truetype');
 }
 
 h1{
@@ -12,6 +12,7 @@ h1{
 	font-size: 65px;
 	margin: 25px 0;
 	line-height: 69px;
+	font-weight: normal;
 }
 
 h2{
@@ -19,6 +20,7 @@ h2{
 	color: #0D636D;
 	font-size: 40px;
 	margin: 15px 0;
+	font-weight: normal;
 }
 
 h3{
@@ -27,6 +29,7 @@ h3{
 	font-size: 26px;
 	margin: 10px 0;
 	line-height: 30px;
+	font-weight: normal;
 }
 
 h4{
@@ -34,12 +37,14 @@ h4{
 	color: #0D636D;
 	font-size: 22px;
 	display: inline;
+	font-weight: normal;
 }
 
 h5{
 	font-family: 'Petrols';
 	font-size: 18px;
 	display: inline;
+	font-weight: normal;
 }
 
 a {
@@ -123,7 +128,7 @@ div #content {
 	color: #999;
 	margin: 0px;
 	line-height: 30px;
-	font-weight: bold;
+	font-weight: normal;
 	margin-left: 0px;
 	margin-top: 22px;
 	position: relative;
@@ -152,7 +157,7 @@ div #content {
 	font-family: 'Petrols';
 	text-decoration: none;
 	color: #999;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 .navbar-bg ul li a:visited {
@@ -188,7 +193,7 @@ div #titleImageContainer p{
 	color: #FFF;
 	position: relative;
 	font-size: 65px;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 div #titleImageContainerMedium{
@@ -227,7 +232,7 @@ div #titleImageContainerSmall p{
 	color: #FFF;
 	position: relative;
 	font-size: 65px;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 div.contentContainer {

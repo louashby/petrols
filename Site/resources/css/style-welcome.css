@@ -17,7 +17,7 @@
 .ticker-title {
 	padding-top: 9px;
 	color: #0d636d;
-	font-weight: bold;
+	font-weight: normal;
 	background-color: #f5f4f4;
 	text-transform: uppercase;
 }
@@ -26,7 +26,7 @@
 	padding-top: 9px;
 	position: absolute;
 	color: #999;
-	font-weight: bold;
+	font-weight: normal;
 	background-color: #f5f4f4;
 	white-space: nowrap;
 }
