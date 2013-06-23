@@ -54,11 +54,11 @@ table.liveTable td {
 
 table.liveTable td.time {
 	width: 130px;
-	font-family: Petrols
+	font-family: 'Petrols';
 }
 
 table.liveTable td.description {
-	font-family: Petrols
+	font-family: 'Petrols';
 }
 
 table.liveTable td.tickets a {

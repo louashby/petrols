@@ -7,7 +7,7 @@
 }
 
 h1{
-	font-family: Petrols;
+	font-family: 'Petrols';
 	color: #0D636D;
 	font-size: 65px;
 	margin: 25px 0;
@@ -15,14 +15,14 @@ h1{
 }
 
 h2{
-	font-family: Petrols;
+	font-family: 'Petrols';
 	color: #0D636D;
 	font-size: 40px;
 	margin: 15px 0;
 }
 
 h3{
-	font-family: Petrols;
+	font-family: 'Petrols';
 	color: #0D636D;
 	font-size: 26px;
 	margin: 10px 0;
@@ -30,14 +30,14 @@ h3{
 }
 
 h4{
-	font-family: Petrols;
+	font-family: 'Petrols';
 	color: #0D636D;
 	font-size: 22px;
 	display: inline;
 }
 
 h5{
-	font-family: Petrols;
+	font-family: 'Petrols';
 	font-size: 18px;
 	display: inline;
 }
@@ -194,16 +194,16 @@ div #titleImageContainer p{
 div #titleImageContainerMedium{
 	position: relative;
 	width: 210px;
-	height: 407px;
+	height: 410px;
 	background-image:url('../img/shapeImage_Medium.png')
 }
 
 div #titleImageContainerMedium img{
-	width: 188px;
+	width: 186px;
 	height: 376px;
 	position: relative;
-	top: 11px;
-	left: 11px;
+	top: 12px;
+	left: 12px;
 }
 
 div #titleImageContainerSmall{
