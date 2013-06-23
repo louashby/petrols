@@ -61,6 +61,11 @@ span.ui-dialog-title{
 	color: #0D636D;
 	font-size: 26px;
 	line-height: 30px;
+	border-radius: 0;
+}
+
+button.ui-dialog-titlebar-close{
+	display: none;
 }
 
 div.ui-dialog-content{
@@ -69,8 +74,8 @@ div.ui-dialog-content{
 }
 
 div.imageContainer{
-	margin: 5px;
-	background: url('../img/shapeImage_Medium.png') no-repeat #F5F4F4;
+	margin: 3px;
+	background: url('../img/aboutUsDialog_shapeImage.png') no-repeat #F5F4F4;
 	width: 456px;
 	height: 674px;
 }

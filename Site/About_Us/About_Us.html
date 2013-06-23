@@ -42,8 +42,8 @@
 					modal: true,
 					resizable: false,
 					movable: false,
-					height: 735,
-					width: 466,
+					height: 728,
+					width: 462,
 					show: {
 						effect: "fade",
 						duration: 500
@@ -51,7 +51,10 @@
 				});
 		
 				jQuery(parent).click(function() {
-					$('div#' + id + 'Detail').dialog( "open" );
+					jQuery('div#' + id + 'Detail').dialog("open");
+					jQuery('div.ui-widget-overlay').click(function(){
+						jQuery('div#' + id + 'Detail').dialog("close");
+					});
 				});
 			}
 		}
@@ -114,6 +117,12 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+		jQuery(document).ready(function(){
+			
+		});
+	</script>
  </body>
 </html>
 
