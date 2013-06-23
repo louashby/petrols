@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>About The Petrols</title>
+	<link rel="stylesheet" type="text/css" media="screen,print"
+		href="../Layout/style.css" />
+	<!--[if IE]><link rel='stylesheet' type='text/css' media='screen,print' href='../Layout/styleIE.css'/><![endif]-->
+	<script type="text/javascript" src="../Scripts/jquery/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+	<div style="text-align: center;">
+		<div class="bodyContent">
+			<div id="headerContainer">
+				<div id="headerLogoContainer">
+					<img class="headerOrnamentLeft" src="../Layout/img/Logo.png" />
+					<img class="headerOrnamentRight" src="../Layout/img/Header.png" />
+					<p class="Title"
+						style="color: #0d636d; position: absolute; top: 50px; left: 100px;">The Petrols</p>
+					<span class="Kontakt"><a href="#"
+						style="margin-right: 7px">Kontakt</a>|<a href="#"
+						style="margin-left: 7px;">Impressum</a></span>
+				</div>
+			
+				<div class="navbar">
+					<div class="navbar-bg">
+						<ul class="navbar-list">
+							<li>
+								<a href="../Welcome.html">Home</a>
+							</li>
+							<li class="current-page">
+								<a href="About_Us.html">About Us</a>
+							</li>
+							<li>
+								<a href="../Live/Live.html">Live</a>
+							</li>
+							<li>
+								<a href="../My_Albums/My_Albums.html">Albums</a>
+							</li>
+							<li>
+								<a href="../Blog/Blog.html">Blog</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div style="margin-top:10px;">
+				<div id="titleImageContainer">
+					<img class="titleImage" src="About_Us_files/aboutUsTitle_color.jpg" />
+					<p style="font-family: 'Petrols'; position: relative; top: -50px; left: 580px; padding-bottom: 0pt; padding-top: 0pt; color: white;" class="Title">About The Petrols</p>
+				</div>
+				
+				<div id="aboutUsContent" style="margin: 20px 40px 30px 40px; position:relative; width: 920px;">
+					<div style="width: 420px; padding: 0pt;">
+						<span class="Body" style="font-family: 'Petrols'; font-size: 22px; color:#0D636D;">The Petrols</span><span class="Body"> - das sind Julia Lipcan, Christina Kouklakis, Nadine Güntner, Christina Pilsl und Susanne Boscher.
+							Die 5-stimmige Swing-aber-eben-nicht-nur-Swing-Band The Petrols entstand aus der kreativen Energie und der
+							unersättlichen Liebe zum Gesang von fünf ehemaligen Schülerinnen des Carl-Orff-Gymnasiums Unterschleißheim.</span>
+					</div>
+
+					<div id="aboutUsTileArea">
+						<div class="aboutUsTile" onclick="location.href='NadineGuentner.html';" onmouseover="jQuery('#nadine').show();" onmouseout="jQuery('#nadine').hide();">
+ 							<div>
+ 								<div class="imgContainer"> 							
+	 								<img src="About_Us_files/nadine_sw.jpg" />
+	 							</div>
+								<p>Nadine Güntner</p>
+							</div>
+							<div id="nadine" class="aboutUsTileMouseOverImg">
+ 								<div class="imgContainer"> 							
+									<img src="About_Us_files/nadine.jpg" />
+	 							</div>
+							</div>
+						</div>
+	
+						<div class="aboutUsTile" onclick="location.href='SusanneBoscher.html';" onmouseover="jQuery('#susi').show();" onmouseout="jQuery('#susi').hide();">
+ 							<div>
+ 								<div class="imgContainer"> 							
+	 								<img src="About_Us_files/susi_sw.jpg" />
+	 							</div>
+								<p>Susanne Boscher</p>
+							</div>
+							<div id="susi" class="aboutUsTileMouseOverImg">
+ 								<div class="imgContainer"> 							
+									<img src="About_Us_files/susi.jpg" />
+								</div>
+							</div>
+						</div>
+	
+						<div class="aboutUsTile" onclick="location.href='ChristinaPilsl.html';" onmouseover="jQuery('#christinaP').show();" onmouseout="jQuery('#christinaP').hide();">
+ 							<div>
+ 								<div class="imgContainer"> 							
+	 								<img src="About_Us_files/christinaP_sw.jpg" />
+	 							</div>
+								<p>Christina Pilsl</p>
+							</div>
+							<div id="christinaP" class="aboutUsTileMouseOverImg">
+ 								<div class="imgContainer"> 							
+									<img src="About_Us_files/christinaP.jpg" />
+								</div>
+							</div>
+						</div>
+	
+						<div class="aboutUsTile" onclick="location.href='JuliaLipcan.html';" onmouseover="jQuery('#julia').show();" onmouseout="jQuery('#julia').hide();">
+ 							<div>
+ 								<div class="imgContainer"> 							
+ 									<img src="About_Us_files/julia_sw.jpg" />
+ 								</div>
+								<p>Julia Lipcan</p>
+							</div>
+							<div id="julia" class="aboutUsTileMouseOverImg">
+ 								<div class="imgContainer"> 							
+									<img src="About_Us_files/julia.jpg" />
+								</div>
+							</div>
+						</div>
+	
+						<div class="aboutUsTile" onclick="location.href='ChristinaKouklakis.html';" onmouseover="jQuery('#christinaK').show();" onmouseout="jQuery('#christinaK').hide();">
+ 							<div>
+ 								<div class="imgContainer"> 							
+	 								<img src="About_Us_files/christinaK_sw.jpg" />
+	 							</div>
+								<p>Christina Kouklakis</p>
+							</div>
+							<div id="christinaK" class="aboutUsTileMouseOverImg">
+ 								<div class="imgContainer"> 							
+									<img src="About_Us_files/christinaK.jpg" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ </body>
+</html>
+
+

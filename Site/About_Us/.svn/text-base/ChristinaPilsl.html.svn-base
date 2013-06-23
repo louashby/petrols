@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Christina Pilsl</title>
+<link rel="stylesheet" type="text/css" media="screen,print"
+	href="../Layout/style.css" />
+<!--[if IE]><link rel='stylesheet' type='text/css' media='screen,print' href='../Layout/style.css'/><![endif]-->
+</head>
+<body>
+	<div style="text-align: center;">
+		<div class="bodyContent">
+			<div id="header">
+				<div style="height: 100px; width: 700px;">
+					<img src="../Layout/img/Logo.png" alt=""
+						style="height: 93px; left: 0px; position: absolute; top: 0px; width: 70px;" />
+					<img src="../Layout/img/Header.png" alt=""
+						style="height: 93px; left: 600px; position: absolute; top: 50px; width: 100px;" />
+					<p class="Title"
+						style="color: #0d636d; position: absolute; top: 50px; left: 100px;">The Petrols</p>
+					<span class="Kontakt"
+						style="position: absolute; top: 10px; left: 500px;"><a href="#"
+						title="Kontakt" style="margin-right: 7px">Kontakt</a>|<a href="#"
+						title="Kontakt" style="margin-left: 7px;">Impressum</a></span>
+				</div>
+			
+				<div class="navbar">
+					<div class="navbar-bg">
+						<ul class="navbar-list">
+							<li>
+								<a href="../Welcome.html">Home</a>
+							</li>
+							<li class="current-page">
+								<a href="About_Us.html">About Us</a>
+							</li>
+							<li>
+								<a href="../My_Albums/My_Albums.html">Albums</a>
+							</li>
+							<li>
+								<a href="../Blog/Blog.html">Blog</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div style="margin-top:10px;">
+				<div style="width: 700px; height: 120px;">
+					<img src="About_Us_files/ChristinaPTitle.png" style="height: 120px; width: 700px;" />
+					<p style="position: relative; top: -110px; left: 15px; padding-bottom: 0pt; padding-top: 0pt; color: white;" class="Title">Christina Pils</p>
+				</div>
+
+				<div
+					style="margin: 30px 40px; width: 620px;">
+					<div class="style">
+						<p style="padding-bottom: 0pt; padding-top: 0pt;" class="Body">Lorem
+						ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+						eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+						voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+						clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+						amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+						nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+						sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+						rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+						ipsum dolor sit amet.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ </body>
+</html>

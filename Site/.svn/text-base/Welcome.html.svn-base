@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Welcome to the Petrols</title>
+	<link rel="stylesheet" type="text/css" media="screen,print"
+		href="Layout/style.css" />
+	<link href="Layout/ticker-style.css" rel="stylesheet" type="text/css" />
+	<!--[if IE]><link rel='stylesheet' type='text/css' media='screen,print' href='Layout/styleIE.css'/><![endif]-->
+	<script type="text/javascript" src="Scripts/jquery/jquery-1.7.2.min.js"></script>
+	<script src="Scripts/jquery/jquery.ticker.js" type="text/javascript"></script>
+</head>
+<body>
+	<div style="text-align: center;">
+		<div class="bodyContent">
+			<div id="headerContainer">
+				<div id="headerLogoContainer">
+					<img class="headerOrnamentLeft" src="Layout/img/Logo.png" />
+					<img class="headerOrnamentRight" src="Layout/img/Header.png" />
+					<p class="Title"
+						style="color: #0d636d; position: absolute; top: 50px; left: 100px;">The Petrols</p>
+					<span class="Kontakt"><a href="#"
+						style="margin-right: 7px">Kontakt</a>|<a href="#"
+						style="margin-left: 7px;">Impressum</a></span>
+				</div>
+			
+				<div class="navbar">
+					<div class="navbar-bg">
+						<ul class="navbar-list">
+							<li class="current-page">
+								<a href="Welcome.html">Home</a>
+							</li>
+							<li>
+								<a href="About_Us/About_Us.html">About Us</a>
+							</li>
+							<li>
+								<a href="Live/Live.html">Live</a>
+							</li>
+							<li>
+								<a href="My_Albums/My_Albums.html">Albums</a>
+							</li>
+							<li>
+								<a href="Blog/Blog.html">Blog</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div style="position: relative; top:10px;">
+				<div id="titleImageContainer">
+					<img class="titleImage" src="Welcome_files/petrols.jpg" />
+				</div>
+				
+				<div style="display: block; width: 950px; margin: 0 25px; clear: both; min-height: 30px;">
+					<ul id="js-news" class="js-hidden">
+						<li class="news-item">The Petrols am 20.April 2012 im Zirkus Krone! Tickets unter <a style="color: #0d636d; text-decoration: underline" href="http://www.muenchenticket.de/guide/tickets/imi1/Wuidara+Pistols+und+Michael+Dietmayr.html" target="_blank">München Ticket</a></li>
+						<li class="news-item">Wir freuen uns auf euch!</li>
+					</ul>
+				</div>
+				
+				<div
+					style="margin: 20px 40px 30px 40px; position:relative; width: 920px;">
+					<div class="style">
+						<p style="padding-bottom: 0pt; padding-top: 0pt;" class="Body">Lorem
+						ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+						eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+						voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+						clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+						amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+						nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+						sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+						rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+						ipsum dolor sit amet.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+	    jQuery(function () {
+	    	jQuery('#js-news').ticker({
+	        	titleText: 'News', controls: false, displayType: 'fade'});
+	    });
+	</script>
+</body>
+</html>
+
+

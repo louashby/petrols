@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>About The Petrols</title>
+	<link rel="stylesheet" type="text/css" media="screen,print" href="../resources/css/style.css" />
+	<!--[if IE]><link rel='stylesheet' type='text/css' media='screen,print' href='../resources/css/styleIE.css'/><![endif]-->
+	<link rel="stylesheet" type="text/css" media="screen,print" href="../resources/css/style-aboutUs.css" />
+	<link rel="stylesheet" type="text/css" media="screen,print" href="../resources/css/jquery-ui.css" />
+	<script type="text/javascript" src="../resources/js/jquery/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="../resources/js/jquery/jquery-ui-1.10.3.min.js"></script>	
+</head>
+<body>
+	<script type="text/javascript">
+		var julia = new AboutUsTile('julia', 'Julia Lipcan');
+		var nadine = new AboutUsTile('nadine', 'Nadine Güntner');
+		var christina = new AboutUsTile('christina', 'Christina Pilsl');
+		var susi = new AboutUsTile('susi', 'Susanne Boscher');
+
+		function AboutUsTile(id, name) {
+ 			this.id = id;
+			this.name = name;
+			
+			this.append = function(container){
+				var tile = '<div id="' + this.id + 'Container" class="aboutUsTile" onmouseover="jQuery(\'#' + this.id + '\').show();" onmouseout="jQuery(\'#' + this.id + '\').hide();">';
+				tile += '<div><div class="imgContainer"><img src="../resources/img/' + this.id + '_sw.jpg" /></div><h5>' + this.name + '</h5>';
+				tile += '<div id="' + this.id + '" class="aboutUsTileMouseOverImg"><div class="imgContainer"><img src="../resources/img/' + this.id + '.jpg" /></div></div></div>';
+				
+				jQuery(container).append(tile);
+
+				appendDialog(this.id, this.name, jQuery(container).find('div#' + this.id + 'Container'));
+			}
+
+			var appendDialog = function(id, name, parent){
+				jQuery(parent).append('<div id="' + id + 'Detail" title="' + name + '" style="width: 500px"></div>');
+				jQuery(parent).find('div#' + id + 'Detail').append('<div class="imgContainer"><img src="../resources/img/' + id + '_big.jpg" /></div>');
+
+				jQuery(parent).find('div#' + id + 'Detail').dialog({
+					autoOpen: false,
+					modal: true,
+					resizable: false,
+					movable: false,
+					height: 730,
+					width: 480,
+					show: {
+						effect: "fade",
+						duration: 500
+					}
+				});
+		
+				jQuery(parent).click(function() {
+					$('div#' + id + 'Detail').dialog( "open" );
+				});
+			}
+		}
+	</script>
+
+	<div style="text-align: center;">
+		<div class="bodyContent">
+			<div id="headerContainer">
+				<div id="headerLogoContainer">
+					<img class="headerOrnamentLeft" src="../resources/img/Logo.png" />
+					<img class="headerOrnamentRight" src="../resources/img/Header.png" />
+					<h1 style="position: absolute; left: 100px;">The Petrols</h1>
+					<span class="kontakt"><a href="#"
+						style="margin-right: 7px"><h5>Kontakt</h5></a>|<a href="../Impressum.html"
+						style="margin-left: 7px;"><h5>Impressum</h5></a></span>
+				</div>
+			
+				<div class="navbar">
+					<div class="navbar-bg">
+						<ul class="navbar-list">
+							<li>
+								<a href="../Welcome.html">Home</a>
+							</li>
+							<li class="current-page">
+								<a href="About_Us.html">About Us</a>
+							</li>
+							<li>
+								<a href="../Live/Live.html">Live</a>
+							</li>
+							<li>
+								<a href="../Blog/Blog.html">Blog</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div style="margin-top:10px;">
+				<div id="titleImageContainer">
+					<img src="../resources/img/aboutUs_titleimage.jpg" />
+					<p style="top: -310px; left: 720px;">About<br/>The Petrols</p>
+				</div>
+				
+				<div id="aboutUsContent" class="contentContainer">
+					<h3>IST DAS PETROL? GANZ GENAU, IN SEINER MUSIKALISCHSTEN FORM.</h3>
+					<div style="width: 350px; padding: 9px 0 0 0; float: left;">
+						<h4>THE PETROLS</h4> - das sind Julia Lipcan, Nadine Güntner, Christina Pilsl und Susanne Boscher.
+							Die 4-stimmige Swing-aber-eben-nicht-nur-Swing-Band <h5>THE PETROLS</h5> entstand aus der kreativen Energie und der
+							unersättlichen Liebe zum Gesang von vier ehemaligen Schülerinnen des Carl-Orff-Gymnasiums Unterschleißheim.
+					</div>
+
+					<div id="aboutUsTileArea">
+						<script type="text/javascript">
+							julia.append("div#aboutUsTileArea");
+							nadine.append("div#aboutUsTileArea");
+							christina.append("div#aboutUsTileArea");
+							susi.append("div#aboutUsTileArea");
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ </body>
+</html>
+
+

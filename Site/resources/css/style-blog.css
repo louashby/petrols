@@ -1,0 +1,39 @@
+div.blogTile {
+	margin: 20px 0;
+}
+
+div.blogTile div#imageTile{
+	margin-right: 20px;
+	width: 226px;
+	height: 172px;
+	background-image: url("../img/blog_shapeImage.png");
+	background-position: top left;
+	float: left;
+}
+
+div.blogTile div#descriptionTile {
+	margin-top: 0;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	width: 660px;
+	float: left;
+}
+
+div.blogTile div#descriptionTile div#shortDescription {
+	font-size: 14px;
+	font-weight: normal;
+	margin: 10px 0;
+}
+
+div.blogTile div#descriptionTile div#shortDescription.missingLink {
+	margin-bottom: 30px;
+}
+
+div.blogTile img {
+	width: 212px;
+	height: 158px;
+	margin: 0;
+	position: relative;
+	top: 7px;
+	left: 7px;
+}

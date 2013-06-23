@@ -1,0 +1,248 @@
+@font-face {
+	font-family: 'Petrols';
+	src:	url('../fonts/ARBONNIE.eot');
+	src:	url('../fonts/ARBONNIE.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/ARBONNIE.woff') format('woff'),
+			url('../fonts/ARBONNIE.ttf') format('truetype');
+}
+
+h1{
+	font-family: Petrols;
+	color: #0D636D;
+	font-size: 65px;
+	margin: 25px 0;
+	line-height: 69px;
+}
+
+h2{
+	font-family: Petrols;
+	color: #0D636D;
+	font-size: 40px;
+	margin: 15px 0;
+}
+
+h3{
+	font-family: Petrols;
+	color: #0D636D;
+	font-size: 26px;
+	margin: 10px 0;
+	line-height: 30px;
+}
+
+h4{
+	font-family: Petrols;
+	color: #0D636D;
+	font-size: 22px;
+	display: inline;
+}
+
+h5{
+	font-family: Petrols;
+	font-size: 18px;
+	display: inline;
+}
+
+a {
+	color: #999999;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #0d636d;
+}
+
+a.active {
+	color: #666666;
+}
+
+body {
+	background: #f5f4f4;
+	margin: 0pt;
+	font-family: 'Arial';
+	color: #666666;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 0;
+	line-height: 20px;
+}
+
+span.kontakt {
+	position: absolute;
+	top: 10px;
+	left: 850px;
+}
+
+
+div .bodyContent{
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	word-wrap: break-word;
+	background: #f5f4f4;
+	text-align: left;
+	width: 1000px;
+}
+
+div #headerContainer {
+	margin-left: 0px;
+	position: relative;
+	width: 1000px;
+	z-index: 0;
+}
+
+div #headerLogoContainer {
+	width: 1000px;
+	height: 100px;
+}
+
+div #headerLogoContainer img.headerOrnamentLeft{
+	width: 70px;
+	height: 93px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+div #headerLogoContainer img.headerOrnamentRight{
+	width: 100px;
+	height: 93px;
+	position: absolute;
+	top: 50px;
+	left: 890px;
+}
+
+div #content {
+	margin-left: 0px;
+	position: relative;
+	width: 1000px;
+	z-index: 5;
+}
+
+.navbar {
+	font-size: 26px;
+	color: #999;
+	margin: 0px;
+	line-height: 30px;
+	font-weight: bold;
+	margin-left: 0px;
+	margin-top: 22px;
+	position: relative;
+	width: 1000px;
+	z-index: 1;
+}
+
+.navbar-bg {
+	text-align: left;
+	padding: 0px;
+}
+
+.navbar-bg ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.navbar-bg ul li {
+	list-style-type: none;
+	display: inline;
+	padding: 0px 15px 0px 10px;
+}
+
+.navbar-bg ul li a {
+	font-family: 'Petrols';
+	text-decoration: none;
+	color: #999;
+	font-weight: bold;
+}
+
+.navbar-bg ul li a:visited {
+	color: #999;
+}
+
+.navbar-bg ul li a:hover {
+	color: #0d636d;
+}
+
+.navbar-bg ul li.current-page a{
+	color: #666;
+}
+
+div #titleImageContainer{
+	position: relative;
+	width: 1000px;
+	height: 400px;
+	background-image:url('../img/shapeImage_Big.png')
+}
+
+div #titleImageContainer img{
+	width: 976px;
+	height: 376px;
+	position: relative;
+	top: 12px;
+	left: 12px;
+}
+
+div #titleImageContainer p{
+	font-family: 'Petrols';
+	line-height: 50px;
+	color: #FFF;
+	position: relative;
+	font-size: 65px;
+	font-weight: bold;
+}
+
+div #titleImageContainerMedium{
+	position: relative;
+	width: 210px;
+	height: 407px;
+	background-image:url('../img/shapeImage_Medium.png')
+}
+
+div #titleImageContainerMedium img{
+	width: 188px;
+	height: 376px;
+	position: relative;
+	top: 11px;
+	left: 11px;
+}
+
+div #titleImageContainerSmall{
+	position: relative;
+	width: 1000px;
+	height: 150px;
+	background-image:url('../img/shapeImage_Small.png')
+}
+
+div #titleImageContainerSmall img{
+	width: 976px;
+	height: 128px;
+	position: relative;
+	top: 12px;
+	left: 12px;
+}
+
+div #titleImageContainerSmall p{
+	font-family: 'Petrols';
+	line-height: 50px;
+	color: #FFF;
+	position: relative;
+	font-size: 65px;
+	font-weight: bold;
+}
+
+div.contentContainer {
+	margin: 20px 40px 30px 40px;
+	position:relative;
+	width: 920px;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+

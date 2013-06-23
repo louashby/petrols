@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>The Petrols Live</title>
+	<link rel="stylesheet" type="text/css" media="screen,print"
+		href="../Layout/style.css" />
+	<!--[if IE]><link rel='stylesheet' type='text/css' media='screen,print' href='Layout/styleIE.css'/><![endif]-->
+	<script type="text/javascript" src="../Scripts/jquery/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+	<div style="text-align: center;">
+		<div class="bodyContent">
+			<div id="headerContainer">
+				<div id="headerLogoContainer">
+					<img class="headerOrnamentLeft" src="../Layout/img/Logo.png" />
+					<img class="headerOrnamentRight" src="../Layout/img/Header.png" />
+					<p class="Title"
+						style="color: #0d636d; position: absolute; top: 50px; left: 100px;">The Petrols</p>
+					<span class="Kontakt"><a href="#"
+						style="margin-right: 7px">Kontakt</a>|<a href="#"
+						style="margin-left: 7px;">Impressum</a></span>
+				</div>
+			
+				<div class="navbar">
+					<div class="navbar-bg">
+						<ul class="navbar-list">
+							<li>
+								<a href="../Welcome.html">Home</a>
+							</li>
+							<li>
+								<a href="../About_Us/About_Us.html">About Us</a>
+							</li>
+							<li class="current-page">
+								<a href="Live.html">Live</a>
+							</li>
+							<li>
+								<a href="../My_Albums/My_Albums.html">Albums</a>
+							</li>
+							<li>
+								<a href="../Blog/Blog.html">Blog</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div style="margin-top: 10px;">
+				<div id="titleImageContainerSmall">
+					<img class="titleImageSmall" src="Live_files/shapeimage_1.jpg" />
+					<p style="font-family: 'Petrols'; line-height: 50px; position: relative; top: -90px; left: 15px; padding-bottom: 0pt; padding-top: 0pt; color: white;" class="Title">The Petrols<br/>Live</p>
+				</div>
+				
+				<div style="margin: 20px 40px 30px 40px; position:relative; width: 920px;">
+					<div class="style">
+						<p style="padding-bottom: 0pt; padding-top: 0pt;" class="Body">Donec
+						arcu risus diam amet sit. Congue tortor cursus risus vestibulum commodo
+						nisl, luctus augue amet quis aenean maecenas sit, donec velit iusto.</p>
+					</div>
+					
+					<div style="width: 100%; font-family: 'Petrols'; font-size: 25px; font-weight: bold; margin-top: 20px;">Upcoming events</div>
+					<div id="liveoverview" style="width:500px; float: left;">
+					</div>
+					<div id="livetableContainer" style="width: 400px; float: left; margin-left: 20px; margin-top: 20px;">
+						<table id="livetable" style="border-collapse: collapse; width: 400px;">
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery.get("live-overviewentries.xml", {}, function(liveEntries){
+				jQuery('item',liveEntries).each(function(){
+					var liveEntry = jQuery(this);
+					var title = liveEntry.find("title").text();
+					var link = liveEntry.find("link").text();
+					var time = liveEntry.find("liveDate").text();
+					var image = liveEntry.find("image").attr("href");
+					var shortDescription = liveEntry.find("shortDescription").text();
+					var tickets = liveEntry.find("tickets").attr("href");
+			
+					jQuery("#liveoverview").append("<div class='liveTile'><div id='imageTile'><img src='" + image + "' /></div><div id='descriptionTile'><div id='descriptionTitle'><a href='" + link + "'><span>" + title + "</span></a><p>" + time + "</p></div><p style='font-size: 14px; font-weight: normal; margin: 7px 0;'>" + shortDescription + "</p><a href='" + tickets + "' style='font-size: 14px; font-weight: bold; float: right; text-decoration: none;' target='_blank'>Tickets</a></div></div>");
+				});
+			}, "xml");
+
+			jQuery.get("live-tableentries.xml", {}, function(liveEntries){
+				jQuery('item',liveEntries).each(function(){
+					var liveEntry = jQuery(this);
+					var title = liveEntry.find("title").text();
+					var time = liveEntry.find("liveDate").text();
+					var tickets = liveEntry.find("tickets").attr("href");
+			
+					jQuery("#livetable").append("<tr style='font-size: 18px;'><td style='width: 130px; border-bottom: 1px solid gray; font-family: Petrols'>" + time + "</td><td style='border-bottom: 1px solid gray; font-family: Petrols'>" + title + "</td><td style='border-bottom: 1px solid gray;'><a href='" + tickets + "' style='font-size: 14px; font-weight: bold; float: right; text-decoration: none;' target='_blank'>Tickets</a></td></tr>");
+				});
+			}, "xml");
+		});
+	</script>
+		
+</body>
+</html>
+
+

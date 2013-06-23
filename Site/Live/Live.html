@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>The Petrols Live</title>
+	<link rel="stylesheet" type="text/css" media="screen,print" href="../resources/css/style.css" />
+	<!--[if IE]><link rel='stylesheet' type='text/css' media='screen,print' href='../resources/css/styleIE.css'/><![endif]-->
+	<link rel="stylesheet" type="text/css" media="screen,print" href="../resources/css/style-live.css" />
+	<link rel="stylesheet" type="text/css" media="screen,print" href="../resources/css/jquery.ui.all.css" />
+	<script type="text/javascript" src="../resources/js/jquery/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="../resources/js/entryItem.js"></script>
+</head>
+<body>
+	<div style="text-align: center;">
+		<div class="bodyContent">
+			<div id="headerContainer">
+				<div id="headerLogoContainer">
+					<img class="headerOrnamentLeft" src="../resources/img/Logo.png" />
+					<img class="headerOrnamentRight" src="../resources/img/Header.png" />
+					<h1 style="position: absolute; left: 100px;">The Petrols</h1>
+					<span class="kontakt"><a href="#"
+						style="margin-right: 7px"><h5>Kontakt</h5></a>|<a href="../Impressum.html"
+						style="margin-left: 7px;"><h5>Impressum</h5></a></span>
+				</div>
+			
+				<div class="navbar">
+					<div class="navbar-bg">
+						<ul class="navbar-list">
+							<li>
+								<a href="../Welcome.html">Home</a>
+							</li>
+							<li>
+								<a href="../About_Us/About_Us.html">About Us</a>
+							</li>
+							<li class="current-page">
+								<a href="Live.html">Live</a>
+							</li>
+							<li>
+								<a href="../Blog/Blog.html">Blog</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div style="margin-top: 10px;">
+				<div id="titleImageContainerSmall">
+					<img src="../resources/img/live_titleImage.jpg" />
+					<p style="top: -155px; left: 15px;">The Petrols<br/>Live</p>
+				</div>
+				
+				<div style="margin: 20px 40px 30px 40px; position:relative; width: 920px;">
+					<h3>UPCOMING EVENTS</h3>
+
+					<div id="liveItems" style="display:none;">
+						<div id="petrolsPalace" class="liveDetailItem">
+							<span class="title">The Petrols Palace</span>
+							<span class="liveDate">1./2. FEB 2014</span>
+							<span class="thumbnail" href="Entries/petrolsPalace.png"></span>
+							<span class="shortDescription">Endlich ist es wieder soweit: <h5>THE PETROLS</h5> Palace Dinnertainment vom Feinsten geht in die dritte Runde.
+								Diesmal begrüßen wir euch im Bürgerhaus Unterschleißheim! Lasst euch überraschen...</span>
+							<span class="tickets" href=""></span>
+						</div>
+						<div class="liveItem">
+							<span class="title">THE PETROLS PALACE</span>
+							<span class="liveDate">01 FEB 2014 20:00</span>
+							<span class="tickets" href="" />
+						</div>
+						<div class="liveItem">
+							<span class="title">THE PETROLS PALACE</span>
+							<span class="liveDate">02 FEB 2014 20:00</span>
+							<span class="tickets" href="" />
+						</div>
+					</div>
+
+					<div id="liveOverview" style="width:500px; float: left;">
+					</div>
+
+					<div id="liveTableContainer" style="width: 400px; float: left; margin-left: 20px; margin-top: 15px;">
+						<table id="liveTable" class="liveTable">
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery('div.liveDetailItem', jQuery('div#liveItems')).each(function(index){
+				var liveEntry = jQuery(this);
+				var id = liveEntry.attr("id");
+				var title = liveEntry.find("span.title").text();
+				var time = liveEntry.find("span.liveDate").text();
+				var image = liveEntry.find("span.thumbnail").attr("href");
+				var shortDescription = liveEntry.find("span.shortDescription").html();
+				var tickets = liveEntry.find("span.tickets").attr('href');
+		
+				var liveItem = new EntryItem(id, image, title, time, shortDescription, tickets, 'liveTile');
+				liveItem.append("#liveOverview");
+			});
+
+			jQuery('div.liveItem', jQuery('div#liveItems')).each(function(index){
+				var liveEntry = jQuery(this);
+				var id = liveEntry.attr("id");
+				var title = liveEntry.find("span.title").text();
+				var time = liveEntry.find("span.liveDate").text();
+				var tickets = liveEntry.find("span.tickets").attr('href');
+				var ticketsTitle = tickets.length <= 0 ? 'Leider sind derzeit noch keine Tickets verfügbar.' : '';
+				var ticketsDisabled = tickets.length <= 0 ? 'disabled' : '';
+
+				var liveTable = jQuery('table#liveTable');
+				liveTable.append('<tr>' + 
+					'<td class="time">' + time + '</td>' + 
+					'<td class="description">' + title + '</td>' + 
+					'<td class="tickets"><a href="' + tickets + '" target="_blank" title="' + ticketsTitle + '" disabled="' + ticketsDisabled + '">Tickets</a></td>' + 
+					'</tr>');
+			});
+		});
+	</script>
+		
+</body>
+</html>
+
+

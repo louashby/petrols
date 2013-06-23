@@ -1,0 +1,61 @@
+div #aboutUsTileArea {
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+div.aboutUsTile{
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+
+div.aboutUsTile:hover{
+	color: #0d636d;
+}
+
+div.aboutUsTile img{
+	height: 83px;
+	width: 110px;
+	border: none;
+	position: relative;
+	top: 7px;
+	left: 7px;
+}
+
+div.aboutUsTile p{
+	margin: 5px 0 0 0;
+	text-align: center;
+}
+
+div.aboutUsTile div.aboutUsTileMouseOverImg {
+	display: none;
+	position: absolute;
+	top: 0px;
+}
+
+div.aboutUsTile div.imgContainer {
+	background-image: url("../img/aboutUs_shapeImage.png");
+	background-position: top left;
+	width: 124px;
+	height: 97px;
+}
+
+div.ui-dialog {
+	border: none;
+	padding: 0;
+}
+
+div.ui-dialog-titlebar{
+	background-color: white;
+	border: none;
+	padding: 0;
+}
+
+div.ui-dialog-content{
+	padding: 0 !important;
+}
