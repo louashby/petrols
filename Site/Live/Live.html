@@ -109,15 +109,17 @@
 				var title = liveEntry.find("span.title").text();
 				var time = liveEntry.find("span.liveDate").text();
 				var tickets = liveEntry.find("span.tickets").attr('href');
-				var ticketsTitle = tickets.length <= 0 ? 'Leider sind derzeit noch keine Tickets verfügbar.' : '';
-				var ticketsDisabled = tickets.length <= 0 ? 'disabled' : '';
 
 				var liveTable = jQuery('table#liveTable');
-				liveTable.append('<tr>' + 
+				liveTable.append('<tr id="liveEntry' + index + '">' + 
 					'<td class="time">' + time + '</td>' + 
 					'<td class="description">' + title + '</td>' + 
-					'<td class="tickets"><a href="' + tickets + '" target="_blank" title="' + ticketsTitle + '" disabled="' + ticketsDisabled + '">Tickets</a></td>' + 
 					'</tr>');
+				if(tickets.length <= 0){
+					liveTable.find('tr#liveEntry' + index).append('<td class="tickets"><span title="Leider sind derzeit noch keine Tickets verfügbar.">Tickets</span></td>');
+				} else {
+					liveTable.find('tr#liveEntry' + index).append('<td class="tickets"><a href="' + tickets + '" target="_blank">Tickets</a></td>');
+				}
 			});
 		});
 	</script>
