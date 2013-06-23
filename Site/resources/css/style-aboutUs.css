@@ -56,6 +56,13 @@ div.ui-dialog-titlebar{
 	padding: 0;
 }
 
+span.ui-dialog-title{
+	font-family: Petrols;
+	color: #0D636D;
+	font-size: 26px;
+	line-height: 30px;
+}
+
 div.ui-dialog-content{
 	background-color: #F5F4F4 !important;
 	padding: 0 !important;
