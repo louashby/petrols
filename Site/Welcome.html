@@ -46,14 +46,15 @@
 			</div>
 			<div style="position: relative; top:10px;">
 				<div id="titleImageContainer" style="z-index: 10;">
-					<img id="img1" src="resources/img/welcome_titleimage.jpg" style="position: absolute; z-index: 14;" />
-                    <img id="img2" src="resources/img/welcome_titleimage2.jpg" style="position: absolute; z-index: 13;"/>
-                    <img id="img3" src="resources/img/welcome_titleimage3.jpg" style="position: absolute; z-index: 12;"/>
-                    <img id="img4" src="resources/img/welcome_titleimage4.jpg" style="position: absolute; z-index: 11;"/>
+					<img id="img1" src="resources/img/welcome_titleimage.png" style="position: absolute; z-index:  15;" />
+                    <img id="img2" src="resources/img/welcome_titleimage2.png" style="position: absolute; z-index: 14;"/>
+                    <img id="img3" src="resources/img/welcome_titleimage3.png" style="position: absolute; z-index: 13;"/>
+                    <img id="img4" src="resources/img/welcome_titleimage4.png" style="position: absolute; z-index: 12;"/>
+                    <img id="img5" src="resources/img/welcome_titleimage5.png" style="position: absolute; z-index: 11;"/>
 				</div>
 				
 				<div class="contentContainer">
-					<h3>LET´S FACE THE MUSIC AND ... SING! baby</h3>
+					<h3>LET´S FACE THE MUSIC AND ... SING!</h3>
 					<ul id="js-news" class="js-hidden">
 						<li class="news-item">Save the date! The Petrols Palace am 1. und 2. Februar 2014 im Bürgerhaus Unterschleißheim.</li>
 						<li class="news-item">Wir freuen uns auf euch!</li>
@@ -70,11 +71,15 @@
 	    });
         
         function beginToFadeImages(){
-            jQuery('#titleImageContainer img#img1').fadeOut(3000, function(){
+            var fadeSpeed = 2000;
+            jQuery('#titleImageContainer img#img1').fadeOut(fadeSpeed+3500, function(){
                                                             
-                jQuery('#titleImageContainer img#img2').fadeOut(3000, function(){
+                jQuery('#titleImageContainer img#img2').fadeOut(fadeSpeed, function(){
                                                                 
-                    jQuery('#titleImageContainer img#img3').fadeOut(3000);
+                    jQuery('#titleImageContainer img#img3').fadeOut(fadeSpeed, function(){
+                        
+                        jQuery('#titleImageContainer img#img4').fadeOut(fadeSpeed);
+                    });
                 });
             });
             
