@@ -1,8 +1,6 @@
 @font-face {
    font-family: 'Petrols';
-   src: url('../fonts/ARBONNIE.eot');
-   src: url('../fonts/ARBONNIE.eot?#iefix') format('embedded-opentype'),
-   		url('../fonts/ARBONNIE.woff') format('woff'), 
+   src: url('../fonts/ARBONNIE.woff') format('woff'), 
    		url('../fonts/ARBONNIE.ttf') format('truetype');
 }
 

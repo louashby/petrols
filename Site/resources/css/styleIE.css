@@ -1,0 +1,9 @@
+@font-face {
+   font-family: 'Petrols';
+   src: url('../fonts/ARBONNIE.eot');
+   src: url('../fonts/ARBONNIE.eot?#iefix') format('embedded-opentype');
+}
+
+div #titleImageContainerMedium{
+	height: 400px;
+}
