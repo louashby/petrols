@@ -61,7 +61,6 @@ a.active {
 body {
 	background: #f5f4f4;
 	margin: 0pt;
-	margin-bottom: 30px;
 	font-family: 'Arial';
 	color: #666666;
 	font-size: 15px;
@@ -169,6 +168,11 @@ div #content {
 
 .navbar-bg ul li.current-page a{
 	color: #666;
+}
+
+div.bodyContainer{
+	margin-top: 10px;
+	margin-bottom: 30px;
 }
 
 div #titleImageContainer{
