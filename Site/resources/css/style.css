@@ -176,7 +176,6 @@ div.bodyContainer{
 }
 
 div #titleImageContainer{
-	position: relative;
 	width: 1000px;
 	height: 400px;
 	background-image:url('../img/shapeImage_Big.png')
@@ -185,14 +184,12 @@ div #titleImageContainer{
 div #titleImageContainer img{
 	width: 976px;
 	height: 376px;
-	position: relative;
-	top: 12px;
-	left: 12px;
+	margin: 12px;
 }
 
-div #titleImageContainer p{
+div #titleImageContainer span{
 	font-family: 'Petrols';
-	line-height: 50px;
+	line-height: 48px;
 	color: #FFF;
 	position: relative;
 	font-size: 65px;
@@ -200,7 +197,6 @@ div #titleImageContainer p{
 }
 
 div #titleImageContainerMedium{
-	position: relative;
 	width: 210px;
 	height: 400px;
 	background-image:url('../img/shapeImage_Medium.png')
@@ -209,13 +205,10 @@ div #titleImageContainerMedium{
 div #titleImageContainerMedium img{
 	width: 186px;
 	height: 376px;
-	position: relative;
-	top: 12px;
-	left: 12px;
+	margin: 12px;
 }
 
 div #titleImageContainerSmall{
-	position: relative;
 	width: 1000px;
 	height: 150px;
 	background-image:url('../img/shapeImage_Small.png')
@@ -224,14 +217,12 @@ div #titleImageContainerSmall{
 div #titleImageContainerSmall img{
 	width: 976px;
 	height: 128px;
-	position: relative;
-	top: 12px;
-	left: 12px;
+	margin: 12px;
 }
 
-div #titleImageContainerSmall p{
+div #titleImageContainerSmall span{
 	font-family: 'Petrols';
-	line-height: 50px;
+	line-height: 48px;
 	color: #FFF;
 	position: relative;
 	font-size: 65px;
@@ -240,7 +231,6 @@ div #titleImageContainerSmall p{
 
 div.contentContainer {
 	margin: 20px 40px 0 40px;
-	position:relative;
 	width: 920px;
 }
 

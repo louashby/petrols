@@ -1,6 +1,11 @@
-div.liveTile {
-	margin: 20px 0;
+div.liveTile:first-child {
+	margin: 0;
 }
+
+div.liveTile {
+	margin-top: 20px;
+}
+
 
 div.liveTile div#imageTile{
 	margin-right: 5px;

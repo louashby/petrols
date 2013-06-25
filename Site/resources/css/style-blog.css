@@ -1,5 +1,9 @@
+div.blogTile:first-child {
+	margin: 0;
+}
+
 div.blogTile {
-	margin: 20px 0;
+	margin-top: 20px;
 }
 
 div.blogTile div#imageTile{
