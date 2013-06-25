@@ -61,6 +61,7 @@ a.active {
 body {
 	background: #f5f4f4;
 	margin: 0pt;
+	margin-bottom: 30px;
 	font-family: 'Arial';
 	color: #666666;
 	font-size: 15px;
@@ -72,7 +73,7 @@ body {
 span.kontakt {
 	position: absolute;
 	top: 10px;
-	left: 850px;
+	left: 930px;
 }
 
 
@@ -197,7 +198,7 @@ div #titleImageContainer p{
 div #titleImageContainerMedium{
 	position: relative;
 	width: 210px;
-	height: 410px;
+	height: 400px;
 	background-image:url('../img/shapeImage_Medium.png')
 }
 
@@ -234,7 +235,7 @@ div #titleImageContainerSmall p{
 }
 
 div.contentContainer {
-	margin: 20px 40px 30px 40px;
+	margin: 20px 40px 0 40px;
 	position:relative;
 	width: 920px;
 }
